@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@config "../tailwind.config.mjs";
+
+@theme {
+  /* Agar config se animations nahi aa rahi, toh yahan define kar sakte hain */
+}
+
+/* 🎯 Ye wala variant sabse solid hai v4 ke liye */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 🚀 Force Background Fix */
+:root {
+  background-color: #fafafa; /* Light mode bg */
+  color: #171717; /* Light mode text */
+}
+
+.dark {
+  background-color: #0a0a0a; /* Dark mode bg */
+  color: #ededed; /* Dark mode text */
+}
